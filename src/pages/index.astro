@@ -1,20 +1,75 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
+import HeroImage from '../images/maxim-kostenko-xH_TvMt3dSU-unsplash.jpg';
 ---
 
 <MainLayout>
 	<section class='hero mx-8 grid h-[75vh] grid-cols-12'>
-		<h1 class='col-span-6 grid text-5xl font-black'>
-			Achieve Self-mastery Through Martial Arts and Fitness.
-		</h1>
-		<aside class='col-span-6'>
+		<article class='col-span-6 flex flex-col justify-center'>
+			<h1 class='text-5xl font-black'>
+				Achieve Self-Mastery Through Martial Arts and Fitness.
+			</h1>
+			<p class='text-xl'>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
+			</p>
+		</article>
+		<aside class='col-span-6 row-span-2'>
 			<h2 class='text-xl font-bold'>Upcoming Classes</h2>
+			<section class='h-full'>
+				<figure class=''>
+					<img src={HeroImage} alt='Gym workout' />
+				</figure>
+				<article class='bg-zinc-800'>
+					<h3>Meet With a Coach</h3>
+					<p>
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, est!
+					</p>
+				</article>
+			</section>
 		</aside>
-		<form class='col-span-6' action=''>
+		<form class='col-span-6 flex flex-col justify-center' action=''>
 			<fieldset class='flex'>
 				<input type='email' name='email' placeholder='Email' />
 				<button class='border px-4 py-2 text-xl'>Get Started</button>
 			</fieldset>
+			<span
+				>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
+				autem mollitia et officiis.</span
+			>
 		</form>
+	</section>
+
+	<section class='features'>
+		<h2 class='text-3xl font-bold'>Features</h2>
+		<ul class='grid grid-cols-4 gap-4'>
+			<li class='flex flex-col items-center justify-center'>
+				<h3 class='text-xl font-bold'>Feature 1</h3>
+				<p class='text-center'>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+					quod.
+				</p>
+			</li>
+			<li class='flex flex-col items-center justify-center'>
+				<h3 class='text-xl font-bold'>Feature 2</h3>
+				<p class='text-center'>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+					quod.
+				</p>
+			</li>
+			<li class='flex flex-col items-center justify-center'>
+				<h3 class='text-xl font-bold'>Feature 3</h3>
+				<p class='text-center'>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+					quod.
+				</p>
+			</li>
+			<li class='flex flex-col items-center justify-center'>
+				<h3 class='text-xl font-bold'>Feature 4</h3>
+				<p class='text-center'>
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
+					quod.
+				</p>
+			</li>
+		</ul>
 	</section>
 </MainLayout>
