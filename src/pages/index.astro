@@ -3,5 +3,18 @@ import MainLayout from '../layouts/MainLayout.astro';
 ---
 
 <MainLayout>
-	<h1 class='text-3xl'>Astro</h1>
+	<section class='hero mx-8 grid h-[75vh] grid-cols-12'>
+		<h1 class='col-span-6 grid text-5xl font-black'>
+			Achieve Self-mastery Through Martial Arts and Fitness.
+		</h1>
+		<aside class='col-span-6'>
+			<h2 class='text-xl font-bold'>Upcoming Classes</h2>
+		</aside>
+		<form class='col-span-6' action=''>
+			<fieldset class='flex'>
+				<input type='email' name='email' placeholder='Email' />
+				<button class='border px-4 py-2 text-xl'>Get Started</button>
+			</fieldset>
+		</form>
+	</section>
 </MainLayout>
