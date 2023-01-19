@@ -4,20 +4,22 @@ import HeroImage from '../images/maxim-kostenko-xH_TvMt3dSU-unsplash.jpg';
 ---
 
 <MainLayout>
-	<section class='hero mx-8 grid h-[75vh] grid-cols-12'>
-		<article class='col-span-6 flex flex-col justify-center'>
-			<h1 class='text-5xl font-black'>
-				Achieve Self-Mastery Through Martial Arts and Fitness.
+	<section class='hero grid h-[75vh] grid-cols-12'>
+		<article
+			class='col-span-12 row-span-2 mx-8 mb-8 flex flex-col justify-center p-8'
+		>
+			<h1 class='font-display text-7xl tracking-wide'>
+				Self-Mastery Through Martial Arts and Fitness.
 			</h1>
 			<p class='text-xl'>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.
 			</p>
 		</article>
-		<aside class='col-span-6 row-span-2'>
+		<aside class='col-span-4 col-start-9 row-start-3 row-end-4'>
 			<h2 class='text-xl font-bold'>Upcoming Classes</h2>
-			<section class='h-full'>
-				<figure class=''>
-					<img src={HeroImage} alt='Gym workout' />
+			<section class=''>
+				<figure class='object-cover'>
+					<img class='' src={HeroImage} alt='Gym workout' />
 				</figure>
 				<article class='bg-zinc-800'>
 					<h3>Meet With a Coach</h3>
@@ -27,10 +29,21 @@ import HeroImage from '../images/maxim-kostenko-xH_TvMt3dSU-unsplash.jpg';
 				</article>
 			</section>
 		</aside>
-		<form class='col-span-6 flex flex-col justify-center' action=''>
+		<form
+			class='col-span-8 row-span-1 flex flex-col justify-center bg-zinc-800 p-8'
+			action=''
+		>
 			<fieldset class='flex'>
-				<input type='email' name='email' placeholder='Email' />
-				<button class='border px-4 py-2 text-xl'>Get Started</button>
+				<input
+					class='rounded-tl rounded-bl'
+					type='email'
+					name='email'
+					placeholder='Email'
+				/>
+				<button
+					class='rounded-tr rounded-br bg-red-400 px-4 py-2 text-xl text-gray-900'
+					>Get Started</button
+				>
 			</fieldset>
 			<span
 				>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
