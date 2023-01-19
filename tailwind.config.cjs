@@ -6,7 +6,7 @@ module.exports = {
 			fontFamily: {
 				body: ['"DM Sans"', 'serif'],
 				heading: ['"Jura"', 'serif'],
-				display: ['"Libre Baskerville"', 'serif'],
+				display: ['"Forum"', 'serif'],
 			},
 		},
 	},
