@@ -4,8 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: {
-				body: ['"DM Sans"', 'serif'],
-				heading: ['"Jura"', 'serif'],
+				body: ['"Inter"', 'serif'],
+				heading: ['"Cardo"', 'serif'],
 				display: ['"Forum"', 'serif'],
 			},
 		},
