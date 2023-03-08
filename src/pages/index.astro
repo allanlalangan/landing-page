@@ -23,28 +23,28 @@ import HeroImage from '../images/maxim-kostenko-xH_TvMt3dSU-unsplash.jpg';
 	<section class='features'>
 		<h2 class='font-heading text-3xl font-bold'>Features</h2>
 		<ul class='grid grid-cols-4 gap-4'>
-			<li class='flex flex-col items-center justify-center'>
+			<li class='feature flex flex-col items-center justify-center'>
 				<h3 class='text-xl font-bold'>Feature 1</h3>
 				<p class='text-center'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
 					quod.
 				</p>
 			</li>
-			<li class='flex flex-col items-center justify-center'>
+			<li class='feature flex flex-col items-center justify-center'>
 				<h3 class='text-xl font-bold'>Feature 2</h3>
 				<p class='text-center'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
 					quod.
 				</p>
 			</li>
-			<li class='flex flex-col items-center justify-center'>
+			<li class='feature flex flex-col items-center justify-center'>
 				<h3 class='text-xl font-bold'>Feature 3</h3>
 				<p class='text-center'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
 					quod.
 				</p>
 			</li>
-			<li class='flex flex-col items-center justify-center'>
+			<li class='feature flex flex-col items-center justify-center'>
 				<h3 class='text-xl font-bold'>Feature 4</h3>
 				<p class='text-center'>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam,
@@ -54,3 +54,26 @@ import HeroImage from '../images/maxim-kostenko-xH_TvMt3dSU-unsplash.jpg';
 		</ul>
 	</section>
 </MainLayout>
+
+<script>
+	const features = document.querySelectorAll('.feature');
+	console.log(features);
+
+	const observer = new IntersectionObserver(
+		(entries) => {
+			entries.forEach((entry) => {
+				if (entry.isIntersecting) {
+					console.log(entry);
+					entry.target.classList.add('show');
+				} else {
+					entry.target.classList.remove('show');
+				}
+			});
+		},
+		{ threshold: 1 }
+	);
+
+	features.forEach((feature) => {
+		observer.observe(feature);
+	});
+</script>
